@@ -1,0 +1,31 @@
+<div class="main-container">
+    <div class="main-card">
+        <div class="login-card">
+            <h1>LOGIN</h1>
+            <form class="col-lg-12 col-md-12 col-12" [formGroup]="loginForm">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-12" style="padding: 5px;">
+                        <mat-form-field appearance='outline'  class="form_field">
+                            <mat-label>UserName</mat-label>
+                            <input matInput value="username" type="text" formControlName="username">
+                            <mat-error *ngIf="loginControl.username.hasError('username')">please enter username
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-lg-10 col-md-12 col-12" style="padding: 5px;">
+                        <mat-form-field matInput appearance='outline'  class="form_field">
+                            <mat-label>password</mat-label>
+                            <input matInput value="password" type="password" formControlName="password">
+                            <mat-hint>Hint</mat-hint>
+                            <mat-error *ngIf="loginControl.password.hasError('password')">please enter passowrd
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <button mat-stroked-button class="login_btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
