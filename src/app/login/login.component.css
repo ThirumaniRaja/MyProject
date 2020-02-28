@@ -37,14 +37,24 @@ color: #0FAEB5;
     width: 75%;
 }
 
-.span_forget_password{
+.span_right{
     float: right;
     margin-right: 75px;
 }
 
-.span_show_password{
+.span_left{
     float: left;
     margin-left: 75px;
+}
+
+.span_left:hover, .span_right:hover, .create_account:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.create_account{
+    font-size: 16px;
 }
 @media only screen and (max-width: 414px) and (min-width: 320px) {
 
@@ -53,16 +63,21 @@ color: #0FAEB5;
         padding: 10px 0px 10px 0px;
     }
 
-    .span_forget_password{
+    .span_right{
         float: right;
         margin-right: 45px;
         font-size: 12px;
     }
     
-    .span_show_password{
+    .span_left{
         float: left;
         margin-left: 45px;
         font-size: 12px;
+    }
+
+    .cursor_hover{
+        cursor: pointer;
+        text-decoration: underline;
     }
 
 }
